@@ -9,12 +9,17 @@ public class CountdownSlider : MonoBehaviour
     private float countdownTime = 15f; // 카운트다운 시간 (초)
     private float currentTime;
 
-    void Start()
+    private Coroutine currentSystem;
+
+    public GameManager gameManager;
+
+    public void Start()
     {
+        SetCountdown(gameManager.timeGap);
         currentTime = countdownTime;
         timeSlider.maxValue = countdownTime;
         timeSlider.value = countdownTime;
-        StartCoroutine(StartCountdown());
+        currentSystem = StartCoroutine(StartCountdown());
     }
 
     IEnumerator StartCountdown()
@@ -29,5 +34,20 @@ public class CountdownSlider : MonoBehaviour
 
         // 카운트다운이 완료되었을 때
         timeSlider.value = 0;
+    }
+
+    public void StopCountdown()
+    {
+        if (currentSystem != null)
+        {
+            Debug.Log("Stop");
+            StopCoroutine(currentSystem);
+            timeSlider.value = 0;
+        }
+    }
+
+    public void SetCountdown(float countdown)
+    {
+        countdownTime = countdown;
     }
 }

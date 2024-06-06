@@ -14,23 +14,48 @@ public class FastForwardClock : MonoBehaviour
 
     void Start()
     {
-        gameTime = startTimeInMinutes * 60f; // 시작 시간 (초 단위로 변환)
+        gameTime = startTimeInMinutes * timeMultiplier; // 시작 시간 (초 단위로 변환)
         StartCoroutine(UpdateClock());
     }
 
     System.Collections.IEnumerator UpdateClock()
     {
-        while (gameTime < endTimeInMinutes * 60f)
+        while (gameTime < endTimeInMinutes * timeMultiplier)
         {
             gameTime += Time.deltaTime * timeMultiplier;
 
-            int hours = Mathf.FloorToInt((gameTime / 3600f) % 24);
-            int minutes = Mathf.FloorToInt((gameTime / 60f) % 60);
+            int hours = Mathf.FloorToInt((gameTime / (timeMultiplier*timeMultiplier)) % 24);
+            int minutes = Mathf.FloorToInt((gameTime / timeMultiplier) % 60);
             clockText.text = string.Format("{0:00}:{1:00}", hours, minutes);
 
             yield return null;
         }
 
         // 시간이 끝나면 멈추거나 추가적인 행동을 수행할 수 있습니다.
+    }
+
+    public float getGameTime()
+    {
+        return gameTime;
+    }
+
+    public float getStartTime()
+    {
+        return startTimeInMinutes;
+    }
+
+    public void setEndTime(float endTime)
+    {
+        endTimeInMinutes = endTime;
+    }
+
+    public float getTimeMultiplier()
+    {
+        return timeMultiplier;
+    }
+
+    public void setCurrentTime(float currentTime)
+    {
+        gameTime = currentTime;
     }
 }
