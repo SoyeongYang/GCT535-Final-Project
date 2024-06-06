@@ -81,11 +81,11 @@ public class GameManager : MonoBehaviour
             targetCharacters.RemoveAll(item => item == character);
         }
 
-        int i = 0;
+        int s = 0;
         foreach (GameObject obj in targetCharacters)
         {
-            obj.GetComponent<CharacterManager>().stageNum = i;
-            i++;
+            obj.GetComponent<CharacterManager>().stageNum = s;
+            s++;
         }
 
         // For Time
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
     public void SelfAlarm()
     {
         GameObject triggerCharacter;
-        if (Input.GetKeyDown(KeyCode.R) & (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum) & <Trigger>)
+        if (Input.GetKeyDown(KeyCode.R) & (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum))
         {
             // 캐릭터와 trigger 생겼을 경우 
             alarmPlay = false;
