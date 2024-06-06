@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    public int stageeNum;
+    public int stageNum;
     private GameManager gameManager;
     public float score, range;
     public int volume;
