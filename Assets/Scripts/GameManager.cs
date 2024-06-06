@@ -171,12 +171,12 @@ public class GameManager : MonoBehaviour
 
     public void SelfAlarm()
     {
-        GameObject triggerCharacter;
-        if (Input.GetKeyDown(KeyCode.R) & (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum))
-        {
-            // 캐릭터와 trigger 생겼을 경우 
-            alarmPlay = false;
-        }
+        // GameObject triggerCharacter;
+        // if (Input.GetKeyDown(KeyCode.R) & (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum))
+        // {
+        //     // 캐릭터와 trigger 생겼을 경우 
+        //     alarmPlay = false;
+        // }
     }
 
     // Update is called once per frame
