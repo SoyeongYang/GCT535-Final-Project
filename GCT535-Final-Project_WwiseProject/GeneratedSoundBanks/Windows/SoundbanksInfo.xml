@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{CAE8FC2A-B6F5-A5EA-6048-7CDFE3588F16}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{6870A5BC-7185-AFC8-DCFF-71C1B0AFC836}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
@@ -30,12 +30,21 @@
 					<ShortName>Cheerful jazz.wav</ShortName>
 					<CachePath>SFX/Cheerful jazz_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="624003465" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Click Sound(Button_Mouse).wav</ShortName>
+					<CachePath>SFX/Click Sound(Button_Mouse)_818F3B66.wem</CachePath>
+				</File>
 				<File Id="865041722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Funny Main.wav</ShortName>
 					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
+					<MediaRefs>
+						<MediaRef Id="624003465"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2213622004" Name="MainBGM" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="865041722"/>
@@ -49,5 +58,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{879A7000-4FEF-3E83-C84B-34C9075B4FA0}</FileHash>
+	<FileHash>{F289F802-0765-E3B8-59A2-B6A77F4C28D1}</FileHash>
 </SoundBanksInfo>

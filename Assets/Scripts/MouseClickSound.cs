@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MouseClickSound : MonoBehaviour
 {
     public List<Button> targetButtons;
+    public AK.Wwise.Event buttonClickSound;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class MouseClickSound : MonoBehaviour
 
     void OnButtonClick(Button button)
     {
-        Debug.Log(button.name + " clicked.");
+        // Debug.Log(button.name + " clicked.");
+        buttonClickSound.Post(gameObject);
     }
 }

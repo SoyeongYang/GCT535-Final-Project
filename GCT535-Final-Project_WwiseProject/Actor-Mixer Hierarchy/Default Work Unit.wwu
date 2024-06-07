@@ -57,6 +57,39 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI_Effect" ID="{F2A7A6B3-CC39-4475-AC4A-1E700DC3323C}" ShortID="35559379">
+					<ChildrenList>
+						<Sound Name="Click Sound(Button_Mouse)" ID="{8DBD30A3-1519-4E39-B7F7-AE9F579C19DE}" ShortID="350869832">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Click Sound(Button_Mouse)" ID="{453E01F0-9DA0-4F70-8DAC-8AF17B360F50}">
+									<Language>SFX</Language>
+									<AudioFile>Click Sound(Button_Mouse).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="624003465"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Click Sound(Button_Mouse)" ID="{453E01F0-9DA0-4F70-8DAC-8AF17B360F50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

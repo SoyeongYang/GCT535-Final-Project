@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	281289243	StartBGM			\Default Work Unit\StartBGM	
+	814543256	Button_Click			\Default Work Unit\Button_Click	
 	2213622004	MainBGM			\Default Work Unit\MainBGM	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	535765498	Cheerful jazz	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Cheerful jazz_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\Cheerful jazz		23637696
+	624003465	Click Sound(Button_Mouse)	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Click Sound(Button_Mouse)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Effect\Click Sound(Button_Mouse)		21768
 	865041722	Funny Main	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Funny Main_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\Funny Main		14630920
 

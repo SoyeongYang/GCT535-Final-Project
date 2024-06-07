@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Button_Click" ID="{0ED3AB8C-70D6-4ABA-82DA-5677D727D620}">
+					<ChildrenList>
+						<Action Name="" ID="{E1B70068-32D4-4DEE-B673-6115909C71B6}" ShortID="937052588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click Sound(Button_Mouse)" ID="{8DBD30A3-1519-4E39-B7F7-AE9F579C19DE}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
