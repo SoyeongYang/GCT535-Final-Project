@@ -24,7 +24,7 @@ public class SimplePlayerUse : MonoBehaviour
     void Update()
     {
         // if (_input.interact) // Open and close action
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             RaycastCheck();
             _input.ResetInteraction();

@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{EA3B4C57-4A70-E691-D1E0-A0AB8B086F86}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{F7F2D8CE-A0A9-609C-4374-8C9B54D8AAD3}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
+				<File Id="279157995" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_door\04. Door, Wood 4 - OpenClose With Squeak.wav</ShortName>
+					<CachePath>SFX/random_door/04. Door, Wood 4 - OpenClose With Squeak_080F01C7.wem</CachePath>
+				</File>
 				<File Id="528666099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rushing Pizzicato_full length.wav</ShortName>
 					<CachePath>SFX/Rushing Pizzicato_full length_FBC78EF0.wem</CachePath>
@@ -42,6 +46,10 @@
 					<ShortName>Click Sound(Button_Mouse).wav</ShortName>
 					<CachePath>SFX/Click Sound(Button_Mouse)_818F3B66.wem</CachePath>
 				</File>
+				<File Id="790191481" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_door\10. Door, Small - Wood - OpenSlam.wav</ShortName>
+					<CachePath>SFX/random_door/10. Door, Small - Wood - OpenSlam_FFEE5467.wem</CachePath>
+				</File>
 				<File Id="865041722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Funny Main.wav</ShortName>
 					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
@@ -50,11 +58,27 @@
 					<ShortName>FloorFootStep2.wav</ShortName>
 					<CachePath>SFX/FloorFootStep2_AF4E94E3.wem</CachePath>
 				</File>
+				<File Id="992139698" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_door\11.-Door_-Heavy-Wood-OpenClose-With-Spring-Creak.wav</ShortName>
+					<CachePath>SFX/random_door/11.-Door_-Heavy-Wood-OpenClose-With-Spring-Creak_6C8F0938.wem</CachePath>
+				</File>
+				<File Id="1060167193" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_door\03. Door, Wood 3 - OpenSlam With Latch.wav</ShortName>
+					<CachePath>SFX/random_door/03. Door, Wood 3 - OpenSlam With Latch_0CFC2A24.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
 					<MediaRefs>
 						<MediaRef Id="624003465"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1404805401" Name="DoorOpen" DurationType="OneShot" DurationMin="0.60645217" DurationMax="1.8711901">
+					<MediaRefs>
+						<MediaRef Id="279157995"/>
+						<MediaRef Id="790191481"/>
+						<MediaRef Id="992139698"/>
+						<MediaRef Id="1060167193"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2234294453" Name="FindingMembers" DurationType="Infinite">
@@ -85,5 +109,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB57D568-7701-6AA9-80F8-244A17F8D31B}</FileHash>
+	<FileHash>{A7DBF29A-792B-F4DB-4B8D-4DD0E483BDA4}</FileHash>
 </SoundBanksInfo>

@@ -8,6 +8,7 @@
 						<ObjectRef Name="StartBGM" ID="{EC6C25E2-F941-4246-BC43-A8681102E5B6}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FindingStuffs" ID="{6D458051-C8AD-4A8E-897E-119EBB551DAF}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Button_Click" ID="{0ED3AB8C-70D6-4ABA-82DA-5677D727D620}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DoorOpen" ID="{2431D365-6720-4C3F-9E4A-48E767064D23}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{4789E0EB-7792-4CC4-8809-91A3F0BA3D13}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MainBGM" ID="{B65B6C19-6946-4D36-8439-817754CDFECE}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FindingMembers" ID="{43895E6B-647E-4DDA-BC06-9FD9C966FCD9}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>

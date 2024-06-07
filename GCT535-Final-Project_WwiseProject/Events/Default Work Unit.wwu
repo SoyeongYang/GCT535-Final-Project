@@ -69,6 +69,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DoorOpen" ID="{2431D365-6720-4C3F-9E4A-48E767064D23}">
+					<ChildrenList>
+						<Action Name="" ID="{3AA458C0-9473-49D8-A40F-F6F8E4641768}" ShortID="144597273">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="random_door" ID="{02F4F593-8F23-4E9C-8548-F53DDE4CCA11}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

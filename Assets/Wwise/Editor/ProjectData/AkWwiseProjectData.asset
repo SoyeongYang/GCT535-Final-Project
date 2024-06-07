@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9533fd19b5d4014980366776e928a5e6
     GuidInternal: 
-    m_lastTime: -8584838716034296052
+    m_lastTime: -8584838568338059624
     List:
     - name: All_SoundBank
       guid: ce6cf92f779c0c4eb6dba8a299ef4c9d
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0f38fe5987d7084fb43474df5dfca6db
     GuidInternal: 
-    m_lastTime: -8584838716034326306
+    m_lastTime: -8584838568338100386
     List:
     - name: Button_Click
       guid: 8cabd30ed670ba4a82da5677d727d620
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.122857146
       minDuration: 0.122857146
+    - name: DoorOpen
+      guid: 65d3312420673f4c9e4a48e767064d23
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: DoorOpen
+        ObjectType: 3
+        guid: 65d3312420673f4c9e4a48e767064d23
+      Path: Events/Default Work Unit/DoorOpen
+      maxAttenuation: 0
+      maxDuration: 1.8711901
+      minDuration: 0.60645217
     - name: FindingMembers
       guid: 6b5e89437e64da4dbc069fd9c966fcd9
       id: 2234294453
