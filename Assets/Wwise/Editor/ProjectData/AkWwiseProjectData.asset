@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9533fd19b5d4014980366776e928a5e6
     GuidInternal: 
-    m_lastTime: -8584838568338059624
+    m_lastTime: -8584838501780152515
     List:
     - name: All_SoundBank
       guid: ce6cf92f779c0c4eb6dba8a299ef4c9d
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0f38fe5987d7084fb43474df5dfca6db
     GuidInternal: 
-    m_lastTime: -8584838568338100386
+    m_lastTime: -8584838501918134061
     List:
     - name: Button_Click
       guid: 8cabd30ed670ba4a82da5677d727d620
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.122857146
       minDuration: 0.122857146
+    - name: Cooking
+      guid: 5293291f7fd7f844be50d61ca4a91323
+      id: 2449017287
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: Cooking
+        ObjectType: 3
+        guid: 5293291f7fd7f844be50d61ca4a91323
+      Path: Events/Default Work Unit/Cooking
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
     - name: DoorOpen
       guid: 65d3312420673f4c9e4a48e767064d23
       id: 1404805401
@@ -164,6 +181,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Fireplace
+      guid: 8914fb27d202cc4ab5dcd8f39908cac4
+      id: 1404152342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: Fireplace
+        ObjectType: 3
+        guid: 8914fb27d202cc4ab5dcd8f39908cac4
+      Path: Events/Default Work Unit/Fireplace
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: ebe089479277c44c880991a3f0ba3d13
       id: 1866025847
@@ -198,6 +232,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Microwave
+      guid: d5fd20f2563ee5498a62b6ac026df417
+      id: 262808124
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: Microwave
+        ObjectType: 3
+        guid: d5fd20f2563ee5498a62b6ac026df417
+      Path: Events/Default Work Unit/Microwave
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
     - name: StartBGM
       guid: e2256cec41f94642bc43a8681102e5b6
       id: 281289243
@@ -213,6 +264,23 @@ MonoBehaviour:
         guid: e2256cec41f94642bc43a8681102e5b6
       Path: Events/Default Work Unit/StartBGM
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: WaterDraining
+      guid: 6265ba8001be4445b9898f0758c96c95
+      id: 3485487036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: WaterDraining
+        ObjectType: 3
+        guid: 6265ba8001be4445b9898f0758c96c95
+      Path: Events/Default Work Unit/WaterDraining
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
   RtpcWwu:

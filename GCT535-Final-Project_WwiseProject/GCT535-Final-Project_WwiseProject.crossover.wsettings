@@ -4,11 +4,16 @@
 		<UserProjectSettings Name="" ID="{26D993CF-43B8-4F50-9079-4D2F312BEC80}">
 			<PropertyList>
 				<Property Name="Event Action List\{0ED3AB8C-70D6-4ABA-82DA-5677D727D620}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1F299352-D77F-44F8-BE50-D61CA4A91323}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2431D365-6720-4C3F-9E4A-48E767064D23}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{27FB1489-02D2-4ACC-B5DC-D8F39908CAC4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{43895E6B-647E-4DDA-BC06-9FD9C966FCD9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4789E0EB-7792-4CC4-8809-91A3F0BA3D13}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6D458051-C8AD-4A8E-897E-119EBB551DAF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{80BA6562-BE01-4544-B989-8F0758C96C95}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B65B6C19-6946-4D36-8439-817754CDFECE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EC6C25E2-F941-4246-BC43-A8681102E5B6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F220FDD5-3E56-49E5-8A62-B6AC026DF417}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>

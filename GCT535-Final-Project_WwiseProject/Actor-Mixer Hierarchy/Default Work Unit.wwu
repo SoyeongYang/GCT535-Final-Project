@@ -334,6 +334,151 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Cooking" ID="{C4F055CF-8D8C-4F27-B530-B159F6AB693F}" ShortID="666035858">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Indoor_Attenuation" ID="{6349D17A-6CD4-45B7-9FEE-09EFBE3D09BC}" WorkUnitID="{34C64B96-A276-4296-B7A3-58F33EEE34E7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cooking" ID="{84078866-2409-49F8-B023-12E9B2D8A0F0}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.314225293266913"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cooking.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="449748768"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cooking" ID="{84078866-2409-49F8-B023-12E9B2D8A0F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="crackling_fireplace" ID="{E3623890-466E-4338-A304-CA70DB88130D}" ShortID="499964945">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Indoor_Attenuation" ID="{6349D17A-6CD4-45B7-9FEE-09EFBE3D09BC}" WorkUnitID="{34C64B96-A276-4296-B7A3-58F33EEE34E7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="crackling_fireplace" ID="{E05E0B22-BC6E-4F5C-AA4D-FCC3B60D580B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="15.3597428892817"/>
+										<Property Name="TrimEnd" Type="Real64" Value="24.7911639616476"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>crackling_fireplace.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="73360298"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="crackling_fireplace" ID="{E05E0B22-BC6E-4F5C-AA4D-FCC3B60D580B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="draining_water" ID="{0BF84C49-76A5-4214-A38E-1AD7B231E317}" ShortID="724454477">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Indoor_Attenuation" ID="{6349D17A-6CD4-45B7-9FEE-09EFBE3D09BC}" WorkUnitID="{34C64B96-A276-4296-B7A3-58F33EEE34E7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="draining_water" ID="{32E3490A-19E9-4055-9C70-FD8277CE84D3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.62020376024426"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.04631835306301"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>draining_water.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="857304423"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="draining_water" ID="{32E3490A-19E9-4055-9C70-FD8277CE84D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="microwave_operate" ID="{45C17A81-DCF0-482C-8F8A-7CEF0EEAC632}" ShortID="934017588">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Indoor_Attenuation" ID="{6349D17A-6CD4-45B7-9FEE-09EFBE3D09BC}" WorkUnitID="{34C64B96-A276-4296-B7A3-58F33EEE34E7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="microwave_operate" ID="{A2872529-2282-46D4-B6BA-F6785A4B00A2}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="102.185322834646"/>
+										<Property Name="TrimEnd" Type="Real64" Value="116.000587926509"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>microwave_operate.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="981027532"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="microwave_operate" ID="{A2872529-2282-46D4-B6BA-F6785A4B00A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

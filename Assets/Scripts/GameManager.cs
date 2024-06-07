@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -23,9 +24,9 @@ public class GameManager : MonoBehaviour
     public GameObject positionLarge;
 
     [Header("List of gameobjects")]
-    public List<GameObject> Small= new List<GameObject>();
-    public List<GameObject> Medium= new List<GameObject>();
-    public List<GameObject> Large= new List<GameObject>();
+    public List<GameObject> Small = new List<GameObject>();
+    public List<GameObject> Medium = new List<GameObject>();
+    public List<GameObject> Large = new List<GameObject>();
     public List<GameObject> Characters = new List<GameObject>();
 
     private Transform[] positions_small, positions_medium, positions_large, positions_character;
@@ -44,6 +45,11 @@ public class GameManager : MonoBehaviour
 
     [Header("Time")]
     public List<float> times;
+
+    [Header("UI Elements")]
+    public TextMeshProUGUI member1;  // 첫 번째 사람
+    public TextMeshProUGUI member2;  // 두 번째 사람
+    public TextMeshProUGUI member3;  // 세 번째 사람
 
     int InitSetting(int lastNum, List<GameObject> targetObjs)
     {
@@ -95,6 +101,27 @@ public class GameManager : MonoBehaviour
         {
             times[i] = startTime + timeGap * (i+1);
         }
+
+        UpdateUIElements();
+    }
+
+    void UpdateUIElements()
+    {
+        if (member1 != null && targetCharacters.Count > 0)
+            member1.text = $"{FormatTime(times[0])}   {targetCharacters[0].name}";
+        
+        if (member2 != null && targetCharacters.Count > 1)
+            member2.text = $"{FormatTime(times[1])}   {targetCharacters[1].name}";
+        
+        if (member3 != null && targetCharacters.Count > 2)
+            member3.text = $"{FormatTime(times[2])}   {targetCharacters[2].name}";
+    }
+
+    string FormatTime(float timeInMinutes)
+    {
+        int hours = Mathf.FloorToInt((timeInMinutes / 60f) % 24);
+        int minutes = Mathf.FloorToInt(timeInMinutes % 60);
+        return string.Format("{0:00}:{1:00}", hours, minutes);
     }
     
     void Shuffle<T>(List<T> list)
