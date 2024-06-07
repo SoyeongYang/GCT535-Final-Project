@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="StartBGM" ID="{EC6C25E2-F941-4246-BC43-A8681102E5B6}">
+					<ChildrenList>
+						<Action Name="" ID="{4550FC9C-D127-47E0-9B7E-ED4247CE8808}" ShortID="368173302">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cheerful jazz" ID="{9331F987-74FD-4419-B2E5-083E5B770A0D}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainBGM" ID="{B65B6C19-6946-4D36-8439-817754CDFECE}">
+					<ChildrenList>
+						<Action Name="" ID="{5A4AFC58-20F8-41F8-9BDE-9C088B3CF1B8}" ShortID="1065942916">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Funny Main" ID="{F674C6A2-3722-4498-9FB1-07F33B595986}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

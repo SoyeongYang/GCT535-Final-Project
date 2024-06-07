@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{CAE8FC2A-B6F5-A5EA-6048-7CDFE3588F16}">
+			<ShortName>All_SoundBank</ShortName>
+			<Path>All_SoundBank.bnk</Path>
+			<Media>
+				<File Id="535765498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cheerful jazz.wav</ShortName>
+					<CachePath>SFX/Cheerful jazz_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="865041722" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Funny Main.wav</ShortName>
+					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2213622004" Name="MainBGM" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="865041722"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="281289243" Name="StartBGM" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="535765498"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{879A7000-4FEF-3E83-C84B-34C9075B4FA0}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="BGM" ID="{747DCD93-4921-4963-A0DE-DF227055E084}" ShortID="145161671">
+					<ChildrenList>
+						<Sound Name="Cheerful jazz" ID="{9331F987-74FD-4419-B2E5-083E5B770A0D}" ShortID="1045221724">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cheerful jazz" ID="{CF977CA5-F882-442B-A323-4AF99E568E43}">
+									<Language>SFX</Language>
+									<AudioFile>Cheerful jazz.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="535765498"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cheerful jazz" ID="{CF977CA5-F882-442B-A323-4AF99E568E43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Funny Main" ID="{F674C6A2-3722-4498-9FB1-07F33B595986}" ShortID="129027350">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Funny Main" ID="{5CFAD0CE-B3F6-4AB2-A926-F2847C9752B2}">
+									<Language>SFX</Language>
+									<AudioFile>Funny Main.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="865041722"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Funny Main" ID="{5CFAD0CE-B3F6-4AB2-A926-F2847C9752B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
