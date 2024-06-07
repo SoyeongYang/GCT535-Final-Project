@@ -80,6 +80,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Cooking" ID="{1F299352-D77F-44F8-BE50-D61CA4A91323}">
+					<ChildrenList>
+						<Action Name="" ID="{A2BF6BDF-93B5-402F-A4F4-022DB438669A}" ShortID="376949059">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cooking" ID="{C4F055CF-8D8C-4F27-B530-B159F6AB693F}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fireplace" ID="{27FB1489-02D2-4ACC-B5DC-D8F39908CAC4}">
+					<ChildrenList>
+						<Action Name="" ID="{08122054-C26C-4B86-B3F7-33949124ABBC}" ShortID="972569935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="crackling_fireplace" ID="{E3623890-466E-4338-A304-CA70DB88130D}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WaterDraining" ID="{80BA6562-BE01-4544-B989-8F0758C96C95}">
+					<ChildrenList>
+						<Action Name="" ID="{3C9B682D-C796-4440-BB1F-E1127EC76190}" ShortID="543391897">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="draining_water" ID="{0BF84C49-76A5-4214-A38E-1AD7B231E317}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Microwave" ID="{F220FDD5-3E56-49E5-8A62-B6AC026DF417}">
+					<ChildrenList>
+						<Action Name="" ID="{331DBE6F-6E4C-458A-BD4B-179699DB4B5A}" ShortID="113077700">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="microwave_operate" ID="{45C17A81-DCF0-482C-8F8A-7CEF0EEAC632}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

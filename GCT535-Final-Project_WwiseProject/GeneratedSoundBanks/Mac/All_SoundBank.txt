@@ -1,21 +1,29 @@
 Event	ID	Name			Wwise Object Path	Notes
+	262808124	Microwave			\Default Work Unit\Microwave	
 	281289243	StartBGM			\Default Work Unit\StartBGM	
 	814543256	Button_Click			\Default Work Unit\Button_Click	
+	1404152342	Fireplace			\Default Work Unit\Fireplace	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	1866025847	Footstep			\Default Work Unit\Footstep	
 	2213622004	MainBGM			\Default Work Unit\MainBGM	
 	2234294453	FindingMembers			\Default Work Unit\FindingMembers	
+	2449017287	Cooking			\Default Work Unit\Cooking	
+	3485487036	WaterDraining			\Default Work Unit\WaterDraining	
 	3652322413	FindingStuffs			\Default Work Unit\FindingStuffs	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	73360298	crackling_fireplace	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\crackling_fireplace_07CF90C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\crackling_fireplace		1663796
 	279157995	04_ Door, Wood 4 - OpenClose With Squeak	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\random_door\04. Door, Wood 4 - OpenClose With Squeak_080F01C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\random_door\04_ Door, Wood 4 - OpenClose With Squeak		292176
+	449748768	Cooking	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Cooking_A1387D4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\Cooking		1248284
 	528666099	Rushing Pizzicato_full length	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Rushing Pizzicato_full length_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Rushing Pizzicato_full length		28047696
 	535765498	Cheerful jazz	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Cheerful jazz_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Cheerful jazz		23637696
 	598090369	Hurry Up_Full	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Hurry Up_Full_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Hurry Up_Full		15464560
 	624003465	Click Sound(Button_Mouse)	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Click Sound(Button_Mouse)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_GameUI\Click Sound(Button_Mouse)		21768
 	790191481	10_ Door, Small - Wood - OpenSlam	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\random_door\10. Door, Small - Wood - OpenSlam_FFEE5467.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\random_door\10_ Door, Small - Wood - OpenSlam		118960
+	857304423	draining_water	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\draining_water_C3DE7E26.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\draining_water		428064
 	865041722	Funny Main	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Funny Main_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Funny Main		14630920
 	970778007	FloorFootStep2	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\FloorFootStep2_AF4E94E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_Character\FloorFootStep2		46056
+	981027532	microwave_operate	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\microwave_operate_A4EA9C45.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\microwave_operate		2437108
 	992139698	11_-Door_-Heavy-Wood-OpenClose-With-Spring-Creak	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\random_door\11.-Door_-Heavy-Wood-OpenClose-With-Spring-Creak_6C8F0938.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\random_door\11_-Door_-Heavy-Wood-OpenClose-With-Spring-Creak		330176
 	1060167193	03_ Door, Wood 3 - OpenSlam With Latch	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\random_door\03. Door, Wood 3 - OpenSlam With Latch_0CFC2A24.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_InGame\random_door\03_ Door, Wood 3 - OpenSlam With Latch		107072
 

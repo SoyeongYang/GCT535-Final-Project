@@ -22,13 +22,21 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{F7F2D8CE-A0A9-609C-4374-8C9B54D8AAD3}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{F09FCACB-0D52-7B86-94B8-4405C57C535A}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
+				<File Id="73360298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crackling_fireplace.wav</ShortName>
+					<CachePath>SFX/crackling_fireplace_07CF90C5.wem</CachePath>
+				</File>
 				<File Id="279157995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\04. Door, Wood 4 - OpenClose With Squeak.wav</ShortName>
 					<CachePath>SFX/random_door/04. Door, Wood 4 - OpenClose With Squeak_080F01C7.wem</CachePath>
+				</File>
+				<File Id="449748768" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cooking.wav</ShortName>
+					<CachePath>SFX/Cooking_A1387D4D.wem</CachePath>
 				</File>
 				<File Id="528666099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rushing Pizzicato_full length.wav</ShortName>
@@ -50,6 +58,10 @@
 					<ShortName>random_door\10. Door, Small - Wood - OpenSlam.wav</ShortName>
 					<CachePath>SFX/random_door/10. Door, Small - Wood - OpenSlam_FFEE5467.wem</CachePath>
 				</File>
+				<File Id="857304423" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>draining_water.wav</ShortName>
+					<CachePath>SFX/draining_water_C3DE7E26.wem</CachePath>
+				</File>
 				<File Id="865041722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Funny Main.wav</ShortName>
 					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
@@ -57,6 +69,10 @@
 				<File Id="970778007" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FloorFootStep2.wav</ShortName>
 					<CachePath>SFX/FloorFootStep2_AF4E94E3.wem</CachePath>
+				</File>
+				<File Id="981027532" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>microwave_operate.wav</ShortName>
+					<CachePath>SFX/microwave_operate_A4EA9C45.wem</CachePath>
 				</File>
 				<File Id="992139698" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\11.-Door_-Heavy-Wood-OpenClose-With-Spring-Creak.wav</ShortName>
@@ -71,6 +87,11 @@
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
 					<MediaRefs>
 						<MediaRef Id="624003465"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2449017287" Name="Cooking" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="449748768"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1404805401" Name="DoorOpen" DurationType="OneShot" DurationMin="0.60645217" DurationMax="1.8711901">
@@ -91,6 +112,11 @@
 						<MediaRef Id="598090369"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1404152342" Name="Fireplace" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="73360298"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.26053312" DurationMax="0.26053312">
 					<MediaRefs>
 						<MediaRef Id="970778007"/>
@@ -101,13 +127,23 @@
 						<MediaRef Id="865041722"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="262808124" Name="Microwave" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="981027532"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="281289243" Name="StartBGM" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="535765498"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3485487036" Name="WaterDraining" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="857304423"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A7DBF29A-792B-F4DB-4B8D-4DD0E483BDA4}</FileHash>
+	<FileHash>{78411919-2040-3D17-81A7-B3BA07F8CAE3}</FileHash>
 </SoundBanksInfo>

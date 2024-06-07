@@ -6,8 +6,12 @@
 				<SoundBank Name="All_SoundBank" ID="{2FF96CCE-9C77-4E0C-B6DB-A8A299EF4C9D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="StartBGM" ID="{EC6C25E2-F941-4246-BC43-A8681102E5B6}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cooking" ID="{1F299352-D77F-44F8-BE50-D61CA4A91323}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WaterDraining" ID="{80BA6562-BE01-4544-B989-8F0758C96C95}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Microwave" ID="{F220FDD5-3E56-49E5-8A62-B6AC026DF417}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FindingStuffs" ID="{6D458051-C8AD-4A8E-897E-119EBB551DAF}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Button_Click" ID="{0ED3AB8C-70D6-4ABA-82DA-5677D727D620}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fireplace" ID="{27FB1489-02D2-4ACC-B5DC-D8F39908CAC4}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorOpen" ID="{2431D365-6720-4C3F-9E4A-48E767064D23}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{4789E0EB-7792-4CC4-8809-91A3F0BA3D13}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MainBGM" ID="{B65B6C19-6946-4D36-8439-817754CDFECE}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
