@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{F09FCACB-0D52-7B86-94B8-4405C57C535A}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{A46FA67D-A3FA-7E6D-29BB-43CB9C926A49}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
@@ -33,6 +33,10 @@
 				<File Id="279157995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\04. Door, Wood 4 - OpenClose With Squeak.wav</ShortName>
 					<CachePath>SFX/random_door/04. Door, Wood 4 - OpenClose With Squeak_080F01C7.wem</CachePath>
+				</File>
+				<File Id="342852158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_alarm\Sound2.wav</ShortName>
+					<CachePath>SFX/random_alarm/Sound2_B14900E9.wem</CachePath>
 				</File>
 				<File Id="449748768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking.wav</ShortName>
@@ -53,6 +57,10 @@
 				<File Id="624003465" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Click Sound(Button_Mouse).wav</ShortName>
 					<CachePath>SFX/Click Sound(Button_Mouse)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="684202021" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_alarm\Sound1.wav</ShortName>
+					<CachePath>SFX/random_alarm/Sound1_6D565F18.wem</CachePath>
 				</File>
 				<File Id="790191481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\10. Door, Small - Wood - OpenSlam.wav</ShortName>
@@ -84,6 +92,12 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="3153111689" Name="AlarmSound" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="342852158"/>
+						<MediaRef Id="684202021"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
 					<MediaRefs>
 						<MediaRef Id="624003465"/>
@@ -145,5 +159,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9E112F5F-41F3-6F5A-A296-1CEFBD2E156A}</FileHash>
+	<FileHash>{D7E1EDE1-4668-CB5E-735E-11E0E8EC9AE9}</FileHash>
 </SoundBanksInfo>

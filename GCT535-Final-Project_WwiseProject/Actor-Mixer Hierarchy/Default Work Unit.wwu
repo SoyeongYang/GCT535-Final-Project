@@ -8,6 +8,11 @@
 						<Sound Name="Cheerful jazz" ID="{9331F987-74FD-4419-B2E5-083E5B770A0D}" ShortID="1045221724">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -33,6 +38,11 @@
 						<Sound Name="Funny Main" ID="{F674C6A2-3722-4498-9FB1-07F33B595986}" ShortID="129027350">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -479,6 +489,93 @@
 								<ActiveSource Name="microwave_operate" ID="{A2872529-2282-46D4-B6BA-F6785A4B00A2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="random_alarm" ID="{502864A4-1D95-4E51-B62E-E62DE39427DB}" ShortID="488531206">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Alarm_Attenuation" ID="{4071A622-41E1-4AAA-9E57-8CA7C205A88A}" WorkUnitID="{34C64B96-A276-4296-B7A3-58F33EEE34E7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sound1" ID="{A6854138-D43B-4D4D-AF15-63221932B373}" ShortID="707127734">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sound1" ID="{0F416DE4-78EE-405E-B7EA-7D1F7108264A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.77952755905512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>random_alarm\Sound1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="684202021"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sound1" ID="{0F416DE4-78EE-405E-B7EA-7D1F7108264A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sound2" ID="{6F103CB8-968C-4920-A11E-EF365576BB59}" ShortID="417130641">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sound2" ID="{1E00B984-DA42-4CDA-A32B-15666F6C54E1}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.74394888451443"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>random_alarm\Sound2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342852158"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sound2" ID="{1E00B984-DA42-4CDA-A32B-15666F6C54E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="All_SoundBank" ID="{2FF96CCE-9C77-4E0C-B6DB-A8A299EF4C9D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="AlarmSound" ID="{D117FAE7-B461-400C-A65D-87F585B48BD0}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartBGM" ID="{EC6C25E2-F941-4246-BC43-A8681102E5B6}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cooking" ID="{1F299352-D77F-44F8-BE50-D61CA4A91323}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WaterDraining" ID="{80BA6562-BE01-4544-B989-8F0758C96C95}" WorkUnitID="{59FE380F-D787-4F08-B434-74DF5DFCA6DB}" Origin="Manual" Filter="7"/>

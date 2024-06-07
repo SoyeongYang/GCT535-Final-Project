@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9533fd19b5d4014980366776e928a5e6
     GuidInternal: 
-    m_lastTime: -8584838501780152515
+    m_lastTime: -8584838465658577959
     List:
     - name: All_SoundBank
       guid: ce6cf92f779c0c4eb6dba8a299ef4c9d
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0f38fe5987d7084fb43474df5dfca6db
     GuidInternal: 
-    m_lastTime: -8584838501918134061
+    m_lastTime: -8584838465658600632
     List:
+    - name: AlarmSound
+      guid: e7fa17d161b40c40a65d87f585b48bd0
+      id: 3153111689
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: AlarmSound
+        ObjectType: 3
+        guid: e7fa17d161b40c40a65d87f585b48bd0
+      Path: Events/Default Work Unit/AlarmSound
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
     - name: Button_Click
       guid: 8cabd30ed670ba4a82da5677d727d620
       id: 814543256

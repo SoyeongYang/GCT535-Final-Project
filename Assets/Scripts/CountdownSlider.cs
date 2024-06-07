@@ -16,14 +16,13 @@ public class CountdownSlider : MonoBehaviour
     public void Start()
     {
         SetCountdown(gameManager.timeGap);
-        currentTime = countdownTime;
         timeSlider.maxValue = countdownTime;
         timeSlider.value = countdownTime;
-        currentSystem = StartCoroutine(StartCountdown());
     }
 
     IEnumerator StartCountdown()
     {
+        currentTime = countdownTime;
         while (currentTime > 0)
         {
             // 시간 업데이트
@@ -40,10 +39,20 @@ public class CountdownSlider : MonoBehaviour
     {
         if (currentSystem != null)
         {
-            Debug.Log("Stop");
+            Debug.Log("Time Limit Stop");
             StopCoroutine(currentSystem);
             timeSlider.value = 0;
+            currentSystem = null;
         }
+    }
+
+    public void StartCountdown(float countdown)
+    {
+        StopCountdown();
+        countdownTime = countdown;
+        timeSlider.maxValue = countdownTime;
+        timeSlider.value = countdownTime;
+        currentSystem = StartCoroutine(StartCountdown());
     }
 
     public void SetCountdown(float countdown)

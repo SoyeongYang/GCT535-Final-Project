@@ -51,6 +51,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI member2;  // 두 번째 사람
     public TextMeshProUGUI member3;  // 세 번째 사람
 
+    [Header("Alarm Spawner")]
+    public AlarmSoundSpawn alarmSoundEvent1;  // 첫 번째 알람
+    public AlarmSoundSpawn alarmSoundEvent2;  // 두 번째 알람
+    public AlarmSoundSpawn alarmSoundEvent3;  // 세 번째 알람
+
     int InitSetting(int lastNum, List<GameObject> targetObjs)
     {
         int i = lastNum;
@@ -73,7 +78,7 @@ public class GameManager : MonoBehaviour
         targetCharacters = new List<GameObject>(Characters);
         Shuffle(targetCharacters);
 
-        List<int> numberList = RandomList(Characters.Count, Characters.Count-characterNumber);
+        List<int> numberList = RandomList(Characters.Count, Characters.Count - characterNumber);
         foreach (int i in numberList)
         {
             GameObject character = Characters[i];
@@ -95,24 +100,24 @@ public class GameManager : MonoBehaviour
         }
 
         // For Time
-        alarmPlay = true;
         float startTime = fastForwardClock.getStartTime();
         for (int i = 0; i < characterNumber; i++)
         {
-            times[i] = startTime + timeGap * (i+1);
+            times[i] = startTime + timeGap * (i + 1);
         }
 
         UpdateUIElements();
+        UpdateAlarmPositions(); // 알람 포지션 업데이트
     }
 
     void UpdateUIElements()
     {
         if (member1 != null && targetCharacters.Count > 0)
             member1.text = $"{FormatTime(times[0])}   {targetCharacters[0].name}";
-        
+
         if (member2 != null && targetCharacters.Count > 1)
             member2.text = $"{FormatTime(times[1])}   {targetCharacters[1].name}";
-        
+
         if (member3 != null && targetCharacters.Count > 2)
             member3.text = $"{FormatTime(times[2])}   {targetCharacters[2].name}";
     }
@@ -123,12 +128,12 @@ public class GameManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeInMinutes % 60);
         return string.Format("{0:00}:{1:00}", hours, minutes);
     }
-    
+
     void Shuffle<T>(List<T> list)
     {
         int count = list.Count;
         System.Random ptr = new System.Random();
-        
+
         for (int i = count - 1; i > 0; i--)
         {
             int swapIndex = ptr.Next(i + 1);
@@ -141,22 +146,22 @@ public class GameManager : MonoBehaviour
     List<int> RandomList(int length, int limit)
     {
         List<int> numberList = new List<int>(length);
-        
+
         for (int i = 0; i < length; i++)
         {
             numberList.Add(i);
         }
-        
+
         Shuffle(numberList);
 
         numberList = numberList.GetRange(0, limit);
         return numberList;
     }
-    
-    void InitObj(Transform[] targetPositions, List<GameObject> targetObjects, bool Character=false)
+
+    void InitObj(Transform[] targetPositions, List<GameObject> targetObjects, bool Character = false)
     {
         List<int> numberlist = RandomList(targetPositions.Length, targetObjects.Count);
-        
+
         int i = 0;
         foreach (GameObject obj in targetObjects)
         {
@@ -180,6 +185,13 @@ public class GameManager : MonoBehaviour
         InGameSetting();
     }
 
+    void UpdateAlarmPositions()
+    {
+        if (targetCharacters.Count > 0) alarmSoundEvent1.transform.position = targetCharacters[0].transform.position;
+        if (targetCharacters.Count > 1) alarmSoundEvent2.transform.position = targetCharacters[1].transform.position;
+        if (targetCharacters.Count > 2) alarmSoundEvent3.transform.position = targetCharacters[2].transform.position;
+    }
+
     void AutoAlarm()
     {
         float currentTime = fastForwardClock.getGameTime();
@@ -191,26 +203,55 @@ public class GameManager : MonoBehaviour
         {
             stage++;
             countdownSlider.StopCountdown();
-            countdownSlider.Start();
+            countdownSlider.StartCountdown(timeGap);
             alarmPlay = true;
+        }
+
+        if (alarmPlay)
+        {
+            if ((stage - 1) == 0)
+            {
+                alarmSoundEvent1.StartAlarm();
+                alarmSoundEvent2.StopAlarm();
+                alarmSoundEvent3.StopAlarm();
+            }
+            if ((stage - 1) == 1)
+            {
+                alarmSoundEvent1.StopAlarm();
+                alarmSoundEvent2.StartAlarm();
+                alarmSoundEvent3.StopAlarm();
+            }
+            if ((stage - 1) == 2)
+            {
+                alarmSoundEvent1.StopAlarm();
+                alarmSoundEvent2.StopAlarm();
+                alarmSoundEvent3.StartAlarm();
+            }
         }
     }
 
-    // public void SelfAlarm()
-    // {
-    //     GameObject triggerCharacter;
-    //     if (Input.GetKeyDown(KeyCode.R) & (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum))
-    //     {
-    //         // 캐릭터와 trigger 생겼을 경우 
-    //         alarmPlay = false;
-    //     }
-    // }
+    public void SelfAlarm()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            foreach (GameObject triggerCharacter in targetCharacters)
+            {
+                if (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum)
+                {
+                    // 캐릭터와 trigger 생겼을 경우
+                    alarmPlay = false;
+                    break; // 조건을 만족하면 반복문을 중지합니다.
+                }
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         AutoAlarm();
-        // SelfAlarm();
+        SelfAlarm();
+        UpdateAlarmPositions(); // 알람 포지션 업데이트
     }
 
     void EndGame()

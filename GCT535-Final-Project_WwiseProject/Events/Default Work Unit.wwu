@@ -124,6 +124,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AlarmSound" ID="{D117FAE7-B461-400C-A65D-87F585B48BD0}">
+					<ChildrenList>
+						<Action Name="" ID="{1D26863C-33EC-4883-97E2-7AF4D85D5584}" ShortID="751921345">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="random_alarm" ID="{502864A4-1D95-4E51-B62E-E62DE39427DB}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
