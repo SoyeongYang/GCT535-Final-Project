@@ -36,6 +36,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="FindingMembers" ID="{43895E6B-647E-4DDA-BC06-9FD9C966FCD9}">
+					<ChildrenList>
+						<Action Name="" ID="{0EF7736C-F461-419D-831A-245CE9827A98}" ShortID="858283384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rushing Pizzicato_full length" ID="{45520746-16B3-42D3-BAC5-BE2F46D6459B}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FindingStuffs" ID="{6D458051-C8AD-4A8E-897E-119EBB551DAF}">
+					<ChildrenList>
+						<Action Name="" ID="{8F7F90E1-6D6E-4089-8276-95A75C2B1BD8}" ShortID="586060930">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hurry Up_Full" ID="{F672E2CC-B6F7-4BC7-81DA-5D124D2AA772}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep" ID="{4789E0EB-7792-4CC4-8809-91A3F0BA3D13}">
+					<ChildrenList>
+						<Action Name="" ID="{25E34DD6-4C00-4EAE-ABBD-79BE455F6979}" ShortID="305443493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FloorFootStep2" ID="{4013009E-2CE3-462C-8483-7473A075CB8C}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

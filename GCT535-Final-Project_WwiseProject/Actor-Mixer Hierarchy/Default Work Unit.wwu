@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="BGM" ID="{747DCD93-4921-4963-A0DE-DF227055E084}" ShortID="145161671">
+				<Folder Name="BGM_InGame" ID="{747DCD93-4921-4963-A0DE-DF227055E084}" ShortID="145161671">
 					<ChildrenList>
 						<Sound Name="Cheerful jazz" ID="{9331F987-74FD-4419-B2E5-083E5B770A0D}" ShortID="1045221724">
 							<PropertyList>
@@ -55,9 +55,59 @@
 								<ActiveSource Name="Funny Main" ID="{5CFAD0CE-B3F6-4AB2-A926-F2847C9752B2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Rushing Pizzicato_full length" ID="{45520746-16B3-42D3-BAC5-BE2F46D6459B}" ShortID="792175294">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rushing Pizzicato_full length" ID="{2FC67791-7C05-4D2F-B35D-095439CC9A03}">
+									<Language>SFX</Language>
+									<AudioFile>Rushing Pizzicato_full length.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="528666099"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rushing Pizzicato_full length" ID="{2FC67791-7C05-4D2F-B35D-095439CC9A03}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hurry Up_Full" ID="{F672E2CC-B6F7-4BC7-81DA-5D124D2AA772}" ShortID="285450076">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hurry Up_Full" ID="{9883687A-83EF-46A8-9A90-2BCFAB4CF3E9}">
+									<Language>SFX</Language>
+									<AudioFile>Hurry Up_Full.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="598090369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hurry Up_Full" ID="{9883687A-83EF-46A8-9A90-2BCFAB4CF3E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="UI_Effect" ID="{F2A7A6B3-CC39-4475-AC4A-1E700DC3323C}" ShortID="35559379">
+				<Folder Name="SE_GameUI" ID="{F2A7A6B3-CC39-4475-AC4A-1E700DC3323C}" ShortID="35559379">
 					<ChildrenList>
 						<Sound Name="Click Sound(Button_Mouse)" ID="{8DBD30A3-1519-4E39-B7F7-AE9F579C19DE}" ShortID="350869832">
 							<PropertyList>
@@ -86,6 +136,43 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Click Sound(Button_Mouse)" ID="{453E01F0-9DA0-4F70-8DAC-8AF17B360F50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SE_Character" ID="{00714852-39B4-4C4E-A188-191E59C2DB2B}" ShortID="363130497">
+					<ChildrenList>
+						<Sound Name="FloorFootStep2" ID="{4013009E-2CE3-462C-8483-7473A075CB8C}" ShortID="500750013">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F80F9054-EB4E-490D-962B-8E2EA06277B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4E194E-7234-44C7-AC4D-43D943210A74}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FloorFootStep2" ID="{4F1996EB-6FB0-4CD3-B99D-479BBE58467A}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.260533111932437"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FloorFootStep2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="970778007"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FloorFootStep2" ID="{4F1996EB-6FB0-4CD3-B99D-479BBE58467A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

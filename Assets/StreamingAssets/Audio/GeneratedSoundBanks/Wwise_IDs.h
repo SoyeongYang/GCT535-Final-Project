@@ -14,6 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTON_CLICK = 814543256U;
+        static const AkUniqueID FINDINGMEMBERS = 2234294453U;
+        static const AkUniqueID FINDINGSTUFFS = 3652322413U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID MAINBGM = 2213622004U;
         static const AkUniqueID STARTBGM = 281289243U;
     } // namespace EVENTS

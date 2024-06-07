@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9533fd19b5d4014980366776e928a5e6
     GuidInternal: 
-    m_lastTime: -8584838838125609062
+    m_lastTime: -8584838716034296052
     List:
     - name: All_SoundBank
       guid: ce6cf92f779c0c4eb6dba8a299ef4c9d
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0f38fe5987d7084fb43474df5dfca6db
     GuidInternal: 
-    m_lastTime: -8584838836823279244
+    m_lastTime: -8584838716034326306
     List:
     - name: Button_Click
       guid: 8cabd30ed670ba4a82da5677d727d620
@@ -113,6 +113,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.122857146
       minDuration: 0.122857146
+    - name: FindingMembers
+      guid: 6b5e89437e64da4dbc069fd9c966fcd9
+      id: 2234294453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: FindingMembers
+        ObjectType: 3
+        guid: 6b5e89437e64da4dbc069fd9c966fcd9
+      Path: Events/Default Work Unit/FindingMembers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FindingStuffs
+      guid: 5180456dadc88e4a897e119ebb551daf
+      id: 3652322413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: FindingStuffs
+        ObjectType: 3
+        guid: 5180456dadc88e4a897e119ebb551daf
+      Path: Events/Default Work Unit/FindingStuffs
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep
+      guid: ebe089479277c44c880991a3f0ba3d13
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: Footstep
+        ObjectType: 3
+        guid: ebe089479277c44c880991a3f0ba3d13
+      Path: Events/Default Work Unit/Footstep
+      maxAttenuation: 0
+      maxDuration: 0.26053312
+      minDuration: 0.26053312
     - name: MainBGM
       guid: 196c5bb64669364d8439817754cdfece
       id: 2213622004
@@ -204,7 +255,7 @@ MonoBehaviour:
     m_lastTime: -8584838880862455933
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000c0000000d000000
+  ExpandedWaapiItemIds: 0500000006000000070000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

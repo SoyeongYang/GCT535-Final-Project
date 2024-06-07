@@ -1,10 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	281289243	StartBGM			\Default Work Unit\StartBGM	
 	814543256	Button_Click			\Default Work Unit\Button_Click	
+	1866025847	Footstep			\Default Work Unit\Footstep	
 	2213622004	MainBGM			\Default Work Unit\MainBGM	
+	2234294453	FindingMembers			\Default Work Unit\FindingMembers	
+	3652322413	FindingStuffs			\Default Work Unit\FindingStuffs	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	535765498	Cheerful jazz	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Cheerful jazz_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\Cheerful jazz		23637696
-	624003465	Click Sound(Button_Mouse)	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Click Sound(Button_Mouse)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Effect\Click Sound(Button_Mouse)		21768
-	865041722	Funny Main	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Funny Main_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\Funny Main		14630920
+	528666099	Rushing Pizzicato_full length	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Rushing Pizzicato_full length_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Rushing Pizzicato_full length		28047696
+	535765498	Cheerful jazz	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Cheerful jazz_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Cheerful jazz		23637696
+	598090369	Hurry Up_Full	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Hurry Up_Full_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Hurry Up_Full		15464560
+	624003465	Click Sound(Button_Mouse)	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Click Sound(Button_Mouse)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_GameUI\Click Sound(Button_Mouse)		21768
+	865041722	Funny Main	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\Funny Main_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM_InGame\Funny Main		14630920
+	970778007	FloorFootStep2	Y:\Documents\GitHub\GCT535-Final-Project\GCT535-Final-Project_WwiseProject\.cache\Mac\SFX\FloorFootStep2_AF4E94E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_Character\FloorFootStep2		46056
 

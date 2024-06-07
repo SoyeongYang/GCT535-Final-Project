@@ -22,13 +22,21 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{6870A5BC-7185-AFC8-DCFF-71C1B0AFC836}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{EA3B4C57-4A70-E691-D1E0-A0AB8B086F86}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
+				<File Id="528666099" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rushing Pizzicato_full length.wav</ShortName>
+					<CachePath>SFX/Rushing Pizzicato_full length_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="535765498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cheerful jazz.wav</ShortName>
 					<CachePath>SFX/Cheerful jazz_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="598090369" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hurry Up_Full.wav</ShortName>
+					<CachePath>SFX/Hurry Up_Full_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="624003465" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Click Sound(Button_Mouse).wav</ShortName>
@@ -38,11 +46,30 @@
 					<ShortName>Funny Main.wav</ShortName>
 					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="970778007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FloorFootStep2.wav</ShortName>
+					<CachePath>SFX/FloorFootStep2_AF4E94E3.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
 					<MediaRefs>
 						<MediaRef Id="624003465"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2234294453" Name="FindingMembers" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="528666099"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3652322413" Name="FindingStuffs" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="598090369"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.26053312" DurationMax="0.26053312">
+					<MediaRefs>
+						<MediaRef Id="970778007"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2213622004" Name="MainBGM" DurationType="Infinite">
@@ -58,5 +85,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{21E33F41-E845-7608-C569-63C0BCDBC77A}</FileHash>
+	<FileHash>{B4648888-C2B6-B6AF-A70B-9DCA6E395045}</FileHash>
 </SoundBanksInfo>
