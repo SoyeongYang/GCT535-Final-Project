@@ -5,7 +5,9 @@ using UnityEngine;
 public class AlarmSoundSpawn : MonoBehaviour
 {
     public AK.Wwise.Event alarmEvent;
+    public AK.Wwise.Event alarmOff;
     private bool isAlarmPlaying = false;
+    private bool isAlarmOff = false;
 
     public void StartAlarm()
     {
@@ -14,6 +16,7 @@ public class AlarmSoundSpawn : MonoBehaviour
             // Debug.Log("StartAlarm");
             alarmEvent.Post(gameObject);
             isAlarmPlaying = true;
+            isAlarmOff = true;
         }
     }
 
@@ -22,8 +25,10 @@ public class AlarmSoundSpawn : MonoBehaviour
         if (isAlarmPlaying)
         {
             // Debug.Log("StopAlarm");
+            if (isAlarmOff) alarmOff.Post(gameObject);
             alarmEvent.Stop(gameObject);
             isAlarmPlaying = false;
         }
+        isAlarmOff = false;
     }
 }

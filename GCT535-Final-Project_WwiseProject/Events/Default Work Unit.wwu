@@ -60,10 +60,10 @@
 				</Event>
 				<Event Name="Footstep" ID="{4789E0EB-7792-4CC4-8809-91A3F0BA3D13}">
 					<ChildrenList>
-						<Action Name="" ID="{25E34DD6-4C00-4EAE-ABBD-79BE455F6979}" ShortID="305443493">
+						<Action Name="" ID="{C9D15C42-0358-4FAC-8EC5-446B66EF947D}" ShortID="33876501">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FloorFootStep2" ID="{4013009E-2CE3-462C-8483-7473A075CB8C}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+									<ObjectRef Name="random_footstep" ID="{3F5BEC01-9959-44CB-9B5A-5B4B33F46ED5}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -130,6 +130,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="random_alarm" ID="{502864A4-1D95-4E51-B62E-E62DE39427DB}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AlarmOff" ID="{6A799911-FAF6-4478-AE86-FC57B36637B2}">
+					<ChildrenList>
+						<Action Name="" ID="{0B2F07DE-E980-4734-B054-37875AD696A3}" ShortID="1073096140">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button2" ID="{20F8A805-F2CB-4505-92C6-207F80F19AF2}" WorkUnitID="{2E36AF44-999A-46F4-B4F2-B102D6B62A19}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

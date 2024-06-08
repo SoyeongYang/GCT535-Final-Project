@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9533fd19b5d4014980366776e928a5e6
     GuidInternal: 
-    m_lastTime: -8584838465658577959
+    m_lastTime: -8584838238571744388
     List:
     - name: All_SoundBank
       guid: ce6cf92f779c0c4eb6dba8a299ef4c9d
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0f38fe5987d7084fb43474df5dfca6db
     GuidInternal: 
-    m_lastTime: -8584838465658600632
+    m_lastTime: -8584837847216922941
     List:
+    - name: AlarmOff
+      guid: 1199796af6fa7844ae86fc57b36637b2
+      id: 1768459107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f38fe5987d7084fb43474df5dfca6db
+      - ElementName: AlarmOff
+        ObjectType: 3
+        guid: 1199796af6fa7844ae86fc57b36637b2
+      Path: Events/Default Work Unit/AlarmOff
+      maxAttenuation: 0
+      maxDuration: 1.0102494
+      minDuration: 1.0102494
     - name: AlarmSound
       guid: e7fa17d161b40c40a65d87f585b48bd0
       id: 3153111689
@@ -110,7 +127,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e7fa17d161b40c40a65d87f585b48bd0
       Path: Events/Default Work Unit/AlarmSound
-      maxAttenuation: 15
+      maxAttenuation: 12
       maxDuration: -1
       minDuration: -1
     - name: Button_Click
@@ -230,8 +247,8 @@ MonoBehaviour:
         guid: ebe089479277c44c880991a3f0ba3d13
       Path: Events/Default Work Unit/Footstep
       maxAttenuation: 0
-      maxDuration: 0.26053312
-      minDuration: 0.26053312
+      maxDuration: 0.6006042
+      minDuration: 0.33366665
     - name: MainBGM
       guid: 196c5bb64669364d8439817754cdfece
       id: 2213622004

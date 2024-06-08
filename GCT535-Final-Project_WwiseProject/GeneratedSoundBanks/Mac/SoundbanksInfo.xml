@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B52AF47F-4C70-0FCE-D08E-99F172EC920C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{A46FA67D-A3FA-7E6D-29BB-43CB9C926A49}">
+		<SoundBank Id="3416891840" Type="User" Language="SFX" Hash="{5050F309-D832-AC38-3580-2A6C16962C69}">
 			<ShortName>All_SoundBank</ShortName>
 			<Path>All_SoundBank.bnk</Path>
 			<Media>
@@ -30,17 +30,49 @@
 					<ShortName>crackling_fireplace.wav</ShortName>
 					<CachePath>SFX/crackling_fireplace_07CF90C5.wem</CachePath>
 				</File>
+				<File Id="127507745" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h7.wav</ShortName>
+					<CachePath>SFX/random_footstep/h7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="152456460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h5.wav</ShortName>
+					<CachePath>SFX/random_footstep/h5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="240593728" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h3.wav</ShortName>
+					<CachePath>SFX/random_footstep/h3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="279157995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\04. Door, Wood 4 - OpenClose With Squeak.wav</ShortName>
 					<CachePath>SFX/random_door/04. Door, Wood 4 - OpenClose With Squeak_080F01C7.wem</CachePath>
+				</File>
+				<File Id="297868112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h4.wav</ShortName>
+					<CachePath>SFX/random_footstep/h4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="312556744" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h6.wav</ShortName>
+					<CachePath>SFX/random_footstep/h6_818F3B66.wem</CachePath>
 				</File>
 				<File Id="342852158" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_alarm\Sound2.wav</ShortName>
 					<CachePath>SFX/random_alarm/Sound2_B14900E9.wem</CachePath>
 				</File>
+				<File Id="368620786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>alarm3.wav</ShortName>
+					<CachePath>SFX/alarm3_11A93380.wem</CachePath>
+				</File>
+				<File Id="397808131" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h2.wav</ShortName>
+					<CachePath>SFX/random_footstep/h2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="449748768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking.wav</ShortName>
 					<CachePath>SFX/Cooking_A1387D4D.wem</CachePath>
+				</File>
+				<File Id="474193879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>alarm1.wav</ShortName>
+					<CachePath>SFX/alarm1_D6313FD2.wem</CachePath>
 				</File>
 				<File Id="528666099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rushing Pizzicato_full length.wav</ShortName>
@@ -50,6 +82,10 @@
 					<ShortName>Cheerful jazz.wav</ShortName>
 					<CachePath>SFX/Cheerful jazz_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="565254906" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h1.wav</ShortName>
+					<CachePath>SFX/random_footstep/h1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="598090369" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hurry Up_Full.wav</ShortName>
 					<CachePath>SFX/Hurry Up_Full_FBC78EF0.wem</CachePath>
@@ -58,9 +94,21 @@
 					<ShortName>Click Sound(Button_Mouse).wav</ShortName>
 					<CachePath>SFX/Click Sound(Button_Mouse)_818F3B66.wem</CachePath>
 				</File>
+				<File Id="625317110" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>alarm2.wav</ShortName>
+					<CachePath>SFX/alarm2_DBA5EC8A.wem</CachePath>
+				</File>
+				<File Id="642935374" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>random_footstep\h8.wav</ShortName>
+					<CachePath>SFX/random_footstep/h8_818F3B66.wem</CachePath>
+				</File>
 				<File Id="684202021" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_alarm\Sound1.wav</ShortName>
 					<CachePath>SFX/random_alarm/Sound1_6D565F18.wem</CachePath>
+				</File>
+				<File Id="693775915" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>alarm4.wav</ShortName>
+					<CachePath>SFX/alarm4_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="790191481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>random_door\10. Door, Small - Wood - OpenSlam.wav</ShortName>
@@ -74,9 +122,9 @@
 					<ShortName>Funny Main.wav</ShortName>
 					<CachePath>SFX/Funny Main_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="970778007" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>FloorFootStep2.wav</ShortName>
-					<CachePath>SFX/FloorFootStep2_AF4E94E3.wem</CachePath>
+				<File Id="979952100" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Button2.wav</ShortName>
+					<CachePath>SFX/Button2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="981027532" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>microwave_operate.wav</ShortName>
@@ -91,11 +139,25 @@
 					<CachePath>SFX/random_door/03. Door, Wood 3 - OpenSlam With Latch_0CFC2A24.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="3153111689" Name="AlarmSound" MaxAttenuation="15" DurationType="Infinite">
+				<Event Id="1768459107" Name="AlarmOff" DurationType="OneShot" DurationMin="1.0102494" DurationMax="1.0102494">
+					<MediaRefs>
+						<MediaRef Id="979952100"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3153111689" Name="AlarmSound" MaxAttenuation="12" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="342852158"/>
+						<MediaRef Id="368620786"/>
+						<MediaRef Id="474193879"/>
+						<MediaRef Id="625317110"/>
 						<MediaRef Id="684202021"/>
+						<MediaRef Id="693775915"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="0.122857146" DurationMax="0.122857146">
@@ -103,7 +165,7 @@
 						<MediaRef Id="624003465"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2449017287" Name="Cooking" MaxAttenuation="3" DurationType="Infinite">
+				<Event Id="2449017287" Name="Cooking" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="449748768"/>
 					</MediaRefs>
@@ -126,14 +188,21 @@
 						<MediaRef Id="598090369"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1404152342" Name="Fireplace" MaxAttenuation="3" DurationType="Infinite">
+				<Event Id="1404152342" Name="Fireplace" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="73360298"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.26053312" DurationMax="0.26053312">
+				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.33366665" DurationMax="0.6006042">
 					<MediaRefs>
-						<MediaRef Id="970778007"/>
+						<MediaRef Id="127507745"/>
+						<MediaRef Id="152456460"/>
+						<MediaRef Id="240593728"/>
+						<MediaRef Id="297868112"/>
+						<MediaRef Id="312556744"/>
+						<MediaRef Id="397808131"/>
+						<MediaRef Id="565254906"/>
+						<MediaRef Id="642935374"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2213622004" Name="MainBGM" DurationType="Infinite">
@@ -141,7 +210,7 @@
 						<MediaRef Id="865041722"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="262808124" Name="Microwave" MaxAttenuation="3" DurationType="Infinite">
+				<Event Id="262808124" Name="Microwave" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="981027532"/>
 					</MediaRefs>
@@ -151,13 +220,18 @@
 						<MediaRef Id="535765498"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3485487036" Name="WaterDraining" MaxAttenuation="3" DurationType="Infinite">
+				<Event Id="3485487036" Name="WaterDraining" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="857304423"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D7E1EDE1-4668-CB5E-735E-11E0E8EC9AE9}</FileHash>
+	<FileHash>{3A8B423F-0DDB-5E31-0006-9D605BA44766}</FileHash>
 </SoundBanksInfo>

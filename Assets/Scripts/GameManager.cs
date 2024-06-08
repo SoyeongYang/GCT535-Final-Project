@@ -192,6 +192,36 @@ public class GameManager : MonoBehaviour
         if (targetCharacters.Count > 2) alarmSoundEvent3.transform.position = targetCharacters[2].transform.position;
     }
 
+    void StopAndTurnOffAlarm(int stage)
+    {
+        switch (stage - 1)
+        {
+            case 0:
+                alarmSoundEvent1.StopAlarm();
+                break;
+            case 1:
+                alarmSoundEvent2.StopAlarm();
+                break;
+            case 2:
+                alarmSoundEvent3.StopAlarm();
+                break;
+        }
+
+        alarmPlay = false;
+    }
+
+    public void PlayerCollidedWithCharacter(CharacterManager characterManager)
+    {
+        // Debug.Log("Player collided with character: " + characterManager.name);
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (characterManager.stageNum == (stage - 1))
+            {
+                StopAndTurnOffAlarm(stage);
+            }
+        }
+    }
+
+
     void AutoAlarm()
     {
         float currentTime = fastForwardClock.getGameTime();
@@ -209,48 +239,47 @@ public class GameManager : MonoBehaviour
 
         if (alarmPlay)
         {
-            if ((stage - 1) == 0)
+            switch (stage - 1)
             {
-                alarmSoundEvent1.StartAlarm();
-                alarmSoundEvent2.StopAlarm();
-                alarmSoundEvent3.StopAlarm();
-            }
-            if ((stage - 1) == 1)
-            {
-                alarmSoundEvent1.StopAlarm();
-                alarmSoundEvent2.StartAlarm();
-                alarmSoundEvent3.StopAlarm();
-            }
-            if ((stage - 1) == 2)
-            {
-                alarmSoundEvent1.StopAlarm();
-                alarmSoundEvent2.StopAlarm();
-                alarmSoundEvent3.StartAlarm();
+                case 0:
+                    alarmSoundEvent1.StartAlarm();
+                    alarmSoundEvent2.StopAlarm();
+                    alarmSoundEvent3.StopAlarm();
+                    break;
+                case 1:
+                    alarmSoundEvent1.StopAlarm();
+                    alarmSoundEvent2.StartAlarm();
+                    alarmSoundEvent3.StopAlarm();
+                    break;
+                case 2:
+                    alarmSoundEvent1.StopAlarm();
+                    alarmSoundEvent2.StopAlarm();
+                    alarmSoundEvent3.StartAlarm();
+                    break;
             }
         }
     }
 
-    public void SelfAlarm()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            foreach (GameObject triggerCharacter in targetCharacters)
-            {
-                if (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum)
-                {
-                    // 캐릭터와 trigger 생겼을 경우
-                    alarmPlay = false;
-                    break; // 조건을 만족하면 반복문을 중지합니다.
-                }
-            }
-        }
-    }
+    // public void SelfAlarm()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         foreach (GameObject triggerCharacter in targetCharacters)
+    //         {
+    //             if (stage == triggerCharacter.GetComponent<CharacterManager>().stageNum)
+    //             {
+    //                 StopAndTurnOffAlarm(stage);
+    //                 break; // 조건을 만족하면 반복문을 중지합니다.
+    //             }
+    //         }
+    //     }
+    // }
 
     // Update is called once per frame
     void Update()
     {
         AutoAlarm();
-        SelfAlarm();
+        // SelfAlarm();
         UpdateAlarmPositions(); // 알람 포지션 업데이트
     }
 

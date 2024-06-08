@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALARMOFF = 1768459107U;
         static const AkUniqueID ALARMSOUND = 3153111689U;
         static const AkUniqueID BUTTON_CLICK = 814543256U;
         static const AkUniqueID COOKING = 2449017287U;
